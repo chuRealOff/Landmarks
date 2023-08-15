@@ -16,7 +16,13 @@ struct LandmarkRow: View {
 				.resizable()
 				.frame(width: 50, height: 50)
 			Text(landmark.name)
+
 			Spacer()
+
+			if landmark.isFavorite {
+				Image(systemName: "star.fill")
+					.foregroundColor(.yellow)
+			}
 		}
     }
 }
@@ -27,6 +33,6 @@ struct LandmarkRow_Previews: PreviewProvider {
 			LandmarkRow(landmark: landmarks[0])
 			LandmarkRow(landmark: landmarks[1])
 		}
-		.previewLayout(.fixed(width: 300, height: 70)) // in the guide - width: 500, height: 120
+		.previewLayout(.fixed(width: 300, height: 70))
     }
 }
