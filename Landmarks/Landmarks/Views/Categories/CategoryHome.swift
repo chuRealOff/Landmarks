@@ -10,7 +10,7 @@ import SwiftUI
 struct CategoryHome: View {
 	@EnvironmentObject var modelData: ModelData
 
-    var body: some View {
+	var body: some View {
 		NavigationView {
 			List {
 				modelData.features[0].image
@@ -25,14 +25,14 @@ struct CategoryHome: View {
 				}
 				.listRowInsets(EdgeInsets())
 			}
-				.navigationTitle("Featured")
+			.navigationTitle("Featured")
 		}
-    }
+	}
 }
 
 struct CategoryHome_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoryHome()
+	static var previews: some View {
+		CategoryHome()
 			.environmentObject(ModelData())
-    }
+	}
 }
