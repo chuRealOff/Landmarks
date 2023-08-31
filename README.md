@@ -1,2 +1,2 @@
 # Landmarks
-/Users/churilovdmitriy/Desktop/LandmarkApp.mp4
+/Users/churilovdmitriy/Development/Обучение/Стороннее/SwiftUI Apple Course/Landmarks/LandmarksApp.mp4
